@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/action_share"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_share_24px"
+            android:title="@string/share"
+            app:showAsAction="ifRoom" />
+    <item
+            android:id="@+id/action_game"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_subscriptions_24px"
+            android:title="@string/videos"
+            app:showAsAction="ifRoom" />
+    <item
+            android:id="@+id/action_account"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_person_24px"
+            android:title="@string/account"
+            app:showAsAction="ifRoom" />
+</menu>

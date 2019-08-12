@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Atlanta Tamil Church</string>
+
+    <!--Nav bar In Page-->
+    <string name="share">Share It</string>
+    <string name="videos">Videos</string>
+    <string name="account">My Account</string>
+
+    <!--Invite In Page-->
+    <string name="invitation_title">Atlanta Tamil Church App</string>
+    <string name="invitation_message">I/ve been using the Atlanta Tamil Church app and love it - you will too Try it and be Blessed!</string>
+    <string name="invitation_cta">Install!</string>
+</resources>
