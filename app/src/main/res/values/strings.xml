@@ -5,6 +5,9 @@
     <string name="share">Share It</string>
     <string name="videos">Videos</string>
     <string name="account">My Account</string>
+    <string name="home">Home</string>
+    <string name="event">Events</string>
+    <string name="atc_videos">Stream Services</string>
 
     <!--Invite In Page-->
     <string name="invitation_title">Atlanta Tamil Church App</string>

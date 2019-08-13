@@ -5,14 +5,17 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.gms.appinvite.AppInviteInvitation;
 import com.materiotech.atc.R;
+import com.materiotech.atc.fragment.HomeFragment;
 import com.materiotech.atc.fragment.YouTubeVideoFragment;
 
 public class HomeActivity extends AppCompatActivity {
@@ -20,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
     public ActionBar actionBar;
     private BottomNavigationView bottomNavigationView;
     private static final int REQUEST_INVITE = 101;
+    public FloatingActionButton fab;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +31,11 @@ public class HomeActivity extends AppCompatActivity {
 
         actionBar = getSupportActionBar();
         bottomNavigationView = (BottomNavigationView)findViewById(R.id.navigationView);
+        fab =(FloatingActionButton) findViewById(R.id.fab);
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         actionBar.setTitle("Atlanta Tamil Church");
+        bottomNavigationView.setSelectedItemId(R.id.action_account);
 
     }
 
@@ -41,16 +47,21 @@ public class HomeActivity extends AppCompatActivity {
             Fragment fragment;
             switch (item.getItemId()) {
                 case R.id.action_share:
-                    actionBar.setTitle("Share With Friends");
+                    actionBar.setTitle("EventsCalender");
                     inviteToFriends();
+                    fab.hide();
                     return true;
                 case R.id.action_game:
                     actionBar.setTitle("ATC Videos");
                     fragment = new YouTubeVideoFragment();
+                    fab.hide();
                     loadFragment(fragment);
                     return true;
                 case R.id.action_account:
-                    actionBar.setTitle("My Account");
+                    actionBar.setTitle("Home");
+                    fragment = new HomeFragment();
+                    fab.show();
+                    loadFragment(fragment);
                     return true;
 
             }
@@ -86,5 +97,15 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
+
+    private void dismissFAB(){
+
     }
 }

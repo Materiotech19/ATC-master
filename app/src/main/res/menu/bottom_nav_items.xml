@@ -11,12 +11,12 @@
             android:id="@+id/action_game"
             android:enabled="true"
             android:icon="@drawable/ic_baseline_subscriptions_24px"
-            android:title="@string/videos"
+            android:title="@string/atc_videos"
             app:showAsAction="ifRoom" />
     <item
             android:id="@+id/action_account"
             android:enabled="true"
             android:icon="@drawable/ic_baseline_person_24px"
-            android:title="@string/account"
+            android:title="@string/home"
             app:showAsAction="ifRoom" />
 </menu>

@@ -17,6 +17,7 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerSupportFragment;
 
+import com.materiotech.atc.adapter.VideoRecyclerAdapter;
 import com.materiotech.atc.api.ApiClient;
 import com.materiotech.atc.api.ApiInterface;
 

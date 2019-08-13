@@ -21,7 +21,7 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerSupportFragment;
 import com.materiotech.atc.PaginationScrollListener;
 import com.materiotech.atc.R;
-import com.materiotech.atc.VideoRecyclerAdapter;
+import com.materiotech.atc.adapter.VideoRecyclerAdapter;
 import com.materiotech.atc.YouTubeModel;
 import com.materiotech.atc.api.ApiClient;
 import com.materiotech.atc.api.ApiInterface;
